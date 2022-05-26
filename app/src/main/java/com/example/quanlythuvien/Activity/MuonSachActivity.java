@@ -1,8 +1,10 @@
 package com.example.quanlythuvien.Activity;
 
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -46,6 +48,7 @@ public class MuonSachActivity extends AppCompatActivity {
 
     private void loadDuLieu() {
         muonSachList = muonSachDAO.getSachChuaTra();
+
         adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, muonSachList);
         lv_muonsach.setAdapter(adapter);
         edt_timkiem.setAdapter(adapter);
@@ -55,7 +58,7 @@ public class MuonSachActivity extends AppCompatActivity {
         btn_muonsach.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                startActivity(new Intent(getApplicationContext(), ThemMuonSachActivity.class));
             }
         });
         lv_muonsach.setOnItemClickListener(new AdapterView.OnItemClickListener() {

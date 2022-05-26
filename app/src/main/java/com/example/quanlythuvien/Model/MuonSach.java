@@ -18,6 +18,10 @@ public class MuonSach {
         this.trangthai = trangthai;
     }
 
+    public MuonSach() {
+
+    }
+
     public int getId() {
         return id;
     }
@@ -76,6 +80,6 @@ public class MuonSach {
 
     @Override
     public String toString() {
-        return String.format(" Sách: %s \n Người mượn: %s \n Ngày mượn: % \n Số ngày mượn: %s", tensach, nguoithue, ngaythue, songaythue);
+        return String.format(" Sách: %s \n Người mượn: %s \n Ngày mượn: %s \n Số ngày mượn: %s", tensach, nguoithue, ngaythue, songaythue);
     }
 }

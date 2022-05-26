@@ -6,7 +6,9 @@ import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.quanlythuvien.Activity.MuonSachActivity;
 import com.example.quanlythuvien.Activity.QuanLySachActivity;
+import com.example.quanlythuvien.Activity.TraSachActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -18,6 +20,18 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(getApplicationContext(), QuanLySachActivity.class));
+            }
+        });
+        findViewById(R.id.btn_muonsach).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(), MuonSachActivity.class));
+            }
+        });
+        findViewById(R.id.btn_trasach).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(), TraSachActivity.class));
             }
         });
     }

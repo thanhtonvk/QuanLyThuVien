@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.ThemMuonSachActivity">
+
+    <EditText
+        android:id="@+id/edt_tensach"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:hint="Tên sách" />
+
+    <EditText
+        android:id="@+id/edt_ten"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Họ tên người mượn" />
+
+    <EditText
+        android:id="@+id/edt_songay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Số ngày mượn" />
+
+    <Button
+        android:id="@+id/btn_muon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mượn sách" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Danh sách sách" />
+
+    <ListView
+        android:id="@+id/lv_sach"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

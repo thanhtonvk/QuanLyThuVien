@@ -8,6 +8,7 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:layout_gravity="top"
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:background="#42A5F5"
@@ -15,7 +16,11 @@
         android:text="Quản lý thư viện"
         android:textColor="@color/white"
         android:textSize="30sp" />
-
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
     <ImageButton
         android:id="@+id/btn_quanlysach"
         android:layout_width="100dp"
@@ -57,4 +62,6 @@
         android:gravity="center"
         android:text="Trả sách"
         android:textSize="20sp" />
+</LinearLayout>
+
 </LinearLayout>

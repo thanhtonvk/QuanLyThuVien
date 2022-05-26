@@ -6,6 +6,10 @@
         <entry key="..\:/LamThue/QuanLyThuVien/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/LamThue/QuanLyThuVien/app/src/main/res/layout/activity_muon_sach.xml" value="0.21666666666666667" />
         <entry key="..\:/LamThue/QuanLyThuVien/app/src/main/res/layout/activity_quan_ly_sach.xml" value="0.36666666666666664" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.14629629629629629" />
+        <entry key="app/src/main/res/layout/activity_muon_sach.xml" value="0.14629629629629629" />
+        <entry key="app/src/main/res/layout/activity_them_muon_sach.xml" value="0.35625" />
+        <entry key="app/src/main/res/layout/activity_tra_sach.xml" value="0.35625" />
       </map>
     </option>
   </component>
