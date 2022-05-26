@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.QuanLySachActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#42A5F5"
+        android:gravity="center"
+        android:text="Quản lý sách"
+        android:textColor="@color/white" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <AutoCompleteTextView
+            android:id="@+id/edt_timkiem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tìm kiếm" />
+
+        <ListView
+            android:id="@+id/lv_sach"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/edt_ten"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Tên sách" />
+
+            <EditText
+                android:id="@+id/edt_loai"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Loại sách" />
+
+            <EditText
+                android:id="@+id/edt_gia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Giá thuê sách"
+                android:inputType="number" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_them"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Thêm" />
+
+            <Button
+                android:id="@+id/btn_sua"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sửa" />
+
+            <Button
+                android:id="@+id/btn_xoa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Xóa" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

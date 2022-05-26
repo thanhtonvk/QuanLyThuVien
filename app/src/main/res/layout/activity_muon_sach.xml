@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.MuonSachActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#42A5F5"
+        android:gravity="center"
+        android:text="Quản lý mượn sách"
+        android:textColor="@color/white" />
+
+    <AutoCompleteTextView
+        android:id="@+id/edt_timkiem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tìm kiếm" />
+
+    <Button
+        android:id="@+id/btn_muonsach"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mượn sách" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Danh sách mượn sách" />
+
+    <ListView
+        android:id="@+id/lv_muonsach"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>
