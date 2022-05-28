@@ -3,9 +3,14 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/LamThue/QuanLyThuVien/app/src/main/res/drawable-v24/ic_launcher_background.xml" value="0.2255" />
+        <entry key="..\:/LamThue/QuanLyThuVien/app/src/main/res/layout/activity_dang_ky.xml" value="0.36666666666666664" />
+        <entry key="..\:/LamThue/QuanLyThuVien/app/src/main/res/layout/activity_dang_nhap.xml" value="0.36666666666666664" />
         <entry key="..\:/LamThue/QuanLyThuVien/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/LamThue/QuanLyThuVien/app/src/main/res/layout/activity_muon_sach.xml" value="0.21666666666666667" />
+        <entry key="..\:/LamThue/QuanLyThuVien/app/src/main/res/layout/activity_quan_ly_doc_gia.xml" value="0.36666666666666664" />
         <entry key="..\:/LamThue/QuanLyThuVien/app/src/main/res/layout/activity_quan_ly_sach.xml" value="0.36666666666666664" />
+        <entry key="..\:/LamThue/QuanLyThuVien/app/src/main/res/layout/activity_them_muon_sach.xml" value="0.2734375" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.14629629629629629" />
         <entry key="app/src/main/res/layout/activity_muon_sach.xml" value="0.14629629629629629" />
         <entry key="app/src/main/res/layout/activity_them_muon_sach.xml" value="0.35625" />

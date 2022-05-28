@@ -29,6 +29,13 @@ public class DBHelper extends SQLiteOpenHelper {
                 "id integer primary key autoincrement," +
                 "idmuonsach integer not null," +
                 "ngaytra nvarchar(50) not null)");
+        sqLiteDatabase.execSQL("create table DocGia(" +
+                "id integer primary key autoincrement," +
+                "hoten nvarchar(50)," +
+                "ngaysinh nvarchar(50)," +
+                "ngaythamgia nvarchar(50)," +
+                "email nvarchar(50)," +
+                "sdt nvarchar(50))");
     }
 
     @Override

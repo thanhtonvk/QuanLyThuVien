@@ -7,7 +7,7 @@ public class Sach {
 
     @Override
     public String toString() {
-        return String.format(" Tên sách: %s \n Loại sách: %s \n Giá thuê: %s", tensach, loaisach, giathue);
+        return String.format(" Tên sách: %s \n Loại sách: %s \n Giá thuê: %s VND", tensach, loaisach, giathue);
     }
 
     public Sach(String tensach, String loaisach, int giathue) {

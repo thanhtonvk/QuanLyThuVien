@@ -36,11 +36,11 @@ public class SachDAO {
 
     public void updateSach(Sach sach, boolean isUpdate) {
         ContentValues values = new ContentValues();
-        values.put("id", sach.getId());
         values.put("tensach", sach.getTensach());
         values.put("loaisach", sach.getLoaisach());
         values.put("giathue", sach.getGiathue());
         if (isUpdate) {
+            values.put("id", sach.getId());
             database.update("Sach", values, "id = ?", new String[]{sach.getId() + ""});
         } else {
             database.insert("Sach", null, values);
