@@ -14,10 +14,10 @@
         android:enabled="false"
         android:hint="Tên sách" />
 
-    <EditText
+    <Spinner
         android:id="@+id/edt_ten"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
         android:hint="Họ tên người mượn" />
 
     <EditText

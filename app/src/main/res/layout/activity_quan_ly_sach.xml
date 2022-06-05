@@ -32,64 +32,93 @@
             android:layout_height="match_parent" />
     </LinearLayout>
 
-
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="2">
-
+        android:layout_weight="1">
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:orientation="vertical">
+            android:layout_height="match_parent">
 
-            <EditText
-                android:id="@+id/edt_ten"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Tên sách" />
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
 
-            <EditText
-                android:id="@+id/edt_loai"
+                <EditText
+                    android:id="@+id/edt_ten"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Tên sách" />
+
+                <Spinner
+                    android:id="@+id/sp_loai"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:hint="Loại sách" />
+
+                <EditText
+                    android:id="@+id/edt_gia"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Giá thuê sách"
+                    android:inputType="number" />
+
+                <EditText
+                    android:id="@+id/edt_namxb"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Năm xuất bản"
+                    android:inputType="number" />
+
+                <EditText
+                    android:id="@+id/edt_tacgia"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Tác giả" />
+
+                <EditText
+                    android:id="@+id/edt_soluong"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Số lượng"
+                    android:inputType="number" />
+
+                <EditText
+                    android:id="@+id/edt_mota"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Mô tả" />
+            </LinearLayout>
+
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Loại sách" />
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:orientation="vertical">
 
-            <EditText
-                android:id="@+id/edt_gia"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Giá thuê sách"
-                android:inputType="number" />
+                <Button
+                    android:id="@+id/btn_them"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Thêm" />
 
+                <Button
+                    android:id="@+id/btn_sua"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sửa" />
+
+                <Button
+                    android:id="@+id/btn_xoa"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Xóa" />
+            </LinearLayout>
         </LinearLayout>
+    </ScrollView>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="2"
-            android:gravity="center"
-            android:orientation="vertical">
-
-            <Button
-                android:id="@+id/btn_them"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Thêm" />
-
-            <Button
-                android:id="@+id/btn_sua"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Sửa" />
-
-            <Button
-                android:id="@+id/btn_xoa"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Xóa" />
-        </LinearLayout>
-    </LinearLayout>
 </LinearLayout>

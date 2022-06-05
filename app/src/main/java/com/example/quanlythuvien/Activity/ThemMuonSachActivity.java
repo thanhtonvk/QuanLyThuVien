@@ -13,22 +13,27 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
+import android.widget.Spinner;
 import android.widget.Toast;
 
+import com.example.quanlythuvien.DAO.DocGiaDAO;
 import com.example.quanlythuvien.DAO.MuonSachDAO;
 import com.example.quanlythuvien.DAO.SachDAO;
+import com.example.quanlythuvien.Model.DocGia;
 import com.example.quanlythuvien.Model.MuonSach;
 import com.example.quanlythuvien.Model.Sach;
 import com.example.quanlythuvien.R;
 
 import java.time.LocalDate;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
 
 public class ThemMuonSachActivity extends AppCompatActivity {
 
 
-    EditText edt_tensach, edt_nguoimuon, edt_songay;
+    EditText edt_tensach, edt_songay;
+    Spinner edt_nguoimuon;
     Button btn_muon;
     ListView lv_sach;
     SachDAO sachDAO;
@@ -36,6 +41,7 @@ public class ThemMuonSachActivity extends AppCompatActivity {
     ArrayAdapter<Sach> sachArrayAdapter;
     List<Sach> sachList;
     Sach sach;
+    List<String> docGiaList = new ArrayList<>();
 
     @RequiresApi(api = Build.VERSION_CODES.O)
     @Override
@@ -69,7 +75,7 @@ public class ThemMuonSachActivity extends AppCompatActivity {
                         MuonSach muonSach = new MuonSach();
                         muonSach.setIdsach(sach.getId());
                         muonSach.setNgaythue(ngayHienTai);
-                        muonSach.setNguoithue(edt_nguoimuon.getText().toString());
+                        muonSach.setNguoithue(docGiaList.get(edt_nguoimuon.getSelectedItemPosition()));
                         muonSach.setSongaythue(Integer.parseInt(edt_songay.getText().toString()));
                         muonSach.setTrangthai("0");
                         muonSachDAO.muonSach(muonSach);
@@ -92,6 +98,13 @@ public class ThemMuonSachActivity extends AppCompatActivity {
         sachList = sachDAO.getSachs();
         sachArrayAdapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, sachList);
         lv_sach.setAdapter(sachArrayAdapter);
+        List<DocGia> docGias = new DocGiaDAO(this).getDocGias();
+        for (DocGia docGia : docGias) {
+            docGiaList.add(docGia.getId() + " - " + docGia.getHoten());
+        }
+        ArrayAdapter<String> docAdapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item, docGiaList);
+        edt_nguoimuon.setAdapter(docAdapter);
+
     }
 
     @Override

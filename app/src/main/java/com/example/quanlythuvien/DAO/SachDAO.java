@@ -27,7 +27,7 @@ public class SachDAO {
         List<Sach> sachList = new ArrayList<>();
         cursor.moveToFirst();
         while (!cursor.isAfterLast()) {
-            Sach sach = new Sach(cursor.getInt(0), cursor.getString(1), cursor.getString(2), cursor.getInt(3));
+            Sach sach = new Sach(cursor.getInt(0), cursor.getString(1), cursor.getString(2), cursor.getInt(3),cursor.getInt(4),cursor.getString(5),cursor.getInt(6),cursor.getString(7));
             sachList.add(sach);
             cursor.moveToNext();
         }
@@ -39,6 +39,10 @@ public class SachDAO {
         values.put("tensach", sach.getTensach());
         values.put("loaisach", sach.getLoaisach());
         values.put("giathue", sach.getGiathue());
+        values.put("namxb",sach.getNamxb());
+        values.put("tacgia",sach.getTacgia());
+        values.put("soluong",sach.getSoluong());
+        values.put("mota",sach.getMota());
         if (isUpdate) {
             values.put("id", sach.getId());
             database.update("Sach", values, "id = ?", new String[]{sach.getId() + ""});

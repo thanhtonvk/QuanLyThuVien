@@ -17,7 +17,11 @@ public class DBHelper extends SQLiteOpenHelper {
                 "id integer primary key autoincrement," +
                 "tensach nvarchar(100) not null," +
                 "loaisach nvarchar(50) not null," +
-                "giathue integer)");
+                "giathue integer," +
+                "namxb integer," +
+                "tacgia nvarchar(50)," +
+                "soluong int," +
+                "mota nvarchar(100))");
         sqLiteDatabase.execSQL("create table MuonSach(" +
                 "id integer primary key autoincrement," +
                 "idsach integer," +
